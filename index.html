@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E部-202605销量分析报告</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", Arial, sans-serif;
+      color: #172033;
+      background: #f5f7fb;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #14315f, #1f5fbf);
+      color: #fff;
+      padding: 44px 24px;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    h1 { margin: 0 0 10px; font-size: 32px; }
+    .sub { color: rgba(255,255,255,.86); margin: 0; }
+    main { max-width: 980px; margin: 0 auto; padding: 28px 18px 48px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card {
+      background: #fff;
+      border: 1px solid #dde4ef;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 12px 28px rgba(23, 32, 51, .08);
+    }
+    h2 { margin: 0 0 10px; font-size: 20px; }
+    p { margin: 0 0 16px; color: #647084; }
+    a.button {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 6px;
+      background: #1d4ed8;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .note {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border: 1px solid #dbeafe;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: #315176;
+      font-size: 14px;
+    }
+    footer { color: #647084; text-align: center; font-size: 12px; padding: 10px 0 28px; }
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>E部-202605销量分析报告</h1>
+      <p class="sub">点击下方按钮查看 PDF 报告。该页面适合通过 GitHub Pages 分享给团队成员。</p>
+    </div>
+  </header>
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h2>销量同比下滑分析报告</h2>
+        <p>包含小组、市场、人员维度，同比下滑情况、核心问题和提升方向。</p>
+        <a class="button" href="sales-decline-report.pdf" target="_blank" rel="noopener">打开报告</a>
+      </section>
+      <section class="card">
+        <h2>月销15单以上销量变化报告</h2>
+        <p>筛选 AM 列去年5月销量大于 15 单的数据，并与 AQ 列今年5月销量对比。</p>
+        <a class="button" href="sales-15plus-report.pdf" target="_blank" rel="noopener">打开报告</a>
+      </section>
+    </div>
+    <div class="note">
+      提醒：如果报告包含公司内部经营数据，请确认可以公开发布。GitHub Pages 默认是互联网可访问链接。
+    </div>
+  </main>
+  <footer>Generated for E部 sales analysis</footer>
+</body>
+</html>
